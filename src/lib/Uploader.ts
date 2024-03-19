@@ -62,7 +62,7 @@ export default class Uploader {
       throw new Error('No bucket defined!');
     }
 
-    this.s3 = this.options.s3Client || new AWS.S3();
+    this.s3 = this.options.s3Client || new S3();
   }
 
   /**
