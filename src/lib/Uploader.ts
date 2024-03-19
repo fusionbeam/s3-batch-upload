@@ -1,11 +1,12 @@
 import streamBatch from './batch';
 import S3 from 'aws-sdk/clients/s3';
+
 import { ConfigurationOptions } from 'aws-sdk/lib/config';
 
 const glob = require('glob');
 const minimatch = require('minimatch');
 const path = require('path');
-const AWS = require('aws-sdk');
+const AWS = require('aws-sdk/global');
 const ProgressBar = require('progress');
 const ora = require('ora');
 const chalk = require('chalk');
