@@ -1,7 +1,7 @@
 import streamBatch from './batch';
 import S3 from 'aws-sdk/clients/s3';
 
-import { ConfigurationOptions } from 'aws-sdk/lib/config';
+import { ConfigurationOptions } from 'aws-sdk/lib/config-base';
 
 const glob = require('glob');
 const minimatch = require('minimatch');
